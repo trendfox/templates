@@ -7,6 +7,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DB098C80-7C1
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{163C28AA-74BD-44E3-82A5-ACE189BEF450}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{79A4739B-6500-4566-93EF-E8CAC4D342E5}"
+	ProjectSection(SolutionItems) = preProject
+		COVERAGE.md = COVERAGE.md
+		coverage.ps1 = coverage.ps1
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
