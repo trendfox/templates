@@ -8,6 +8,7 @@
     <Authors>Martin Kaip</Authors>
     <Description>Templates for common solution and project structures.</Description>
     <PackageTags>dotnet-new;templates;trend-fox</PackageTags>
+    <PackageIcon>TrendFox-Icon.png</PackageIcon>
     <TargetFramework>netstandard2.0</TargetFramework>
 
     <IncludeContentInPack>true</IncludeContentInPack>
