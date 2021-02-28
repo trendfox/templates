@@ -1,15 +1,20 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.0.1</PackageVersion>
     <PackageId>TrendFox.Templates</PackageId>
     <Title>Trend-Fox Templates</Title>
     <Authors>Martin Kaip</Authors>
+    <Company>Martin Kaip</Company>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <Copyright>Martin Kaip</Copyright>
+    <RepositoryUrl>https://github.com/trendfox/Templates</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/trendfox/templates</PackageProjectUrl>
     <Description>Templates for common solution and project structures.</Description>
-    <PackageTags>dotnet-new;templates;trend-fox</PackageTags>
     <PackageIcon>TrendFox-Icon.png</PackageIcon>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageTags>dotnet-new;templates;trend-fox</PackageTags>
 
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
