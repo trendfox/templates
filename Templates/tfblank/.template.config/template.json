@@ -2,7 +2,6 @@
     "$schema": "http://json.schemastore.org/template",
     "author": "Martin Kaip",
     "classifications": [
-        "Blank",
         "Solution"
     ],
     "identity": "TrendFox.Template.BlankSolution",
