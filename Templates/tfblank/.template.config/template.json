@@ -4,8 +4,8 @@
     "classifications": [
         "Solution"
     ],
-    "identity": "TrendFox.Template.BlankSolution",
-    "name": "TrendFox blank solution",
+    "identity": "TrendFox.Templates.BlankSolution",
+    "name": "TrendFox Blank Solution",
     "shortName": "tfblank",
     "sourceName": "tfblank"
 }
