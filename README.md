@@ -7,8 +7,17 @@ dotnet new -i TrendFox.Templates
 To uninstall, use the switch `-u` instead of `-i`.
 
 ## Usage
-After installing, the following templates are available:
+After installing, use the following command. Use the desired
+template name.
+```
+dotnet new <name>
+```
 
-### tfblank
-A blank solution using `src` and `test` folders. The
-template includes a PowerShell script for code coverage.
+- `tfblank`
+  
+  Blank solution using `src` and `test` folders. The
+  template includes a PowerShell script for code coverage.
+
+- `tfconsole`
+  
+  Console application with dependency injection.
