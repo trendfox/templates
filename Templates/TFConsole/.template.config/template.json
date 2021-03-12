@@ -11,7 +11,7 @@
 	},
     "identity": "TrendFox.Templates.Console",
     "name": "TrendFox Console Application",
-	"description": "Console application template with dependency injection.",
+    "description": "Console application template with dependency injection.",
     "shortName": "tfconsole",
     "sourceName": "TFConsole",
 	"preferNameDirectory" : true

@@ -6,7 +6,7 @@
     ],
     "identity": "TrendFox.Templates.BlankSolution",
     "name": "TrendFox Blank Solution",
-	"description": "Blank solution with src and test structure and a PowerShell script for code coverage.",
+    "description": "Blank solution with src and test structure and a PowerShell script for code coverage.",
     "shortName": "tfblank",
     "sourceName": "TFBlank"
 }
