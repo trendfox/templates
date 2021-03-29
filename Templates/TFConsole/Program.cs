@@ -1,19 +1,20 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
-using TFConsole.Abstractions;
-using TFConsole.Services;
 
 namespace TFConsole
 {
     class Program
     {
+        static IConfiguration Configuration;
+
         static async Task Main(string[] args)
         {
-            var config = CreateConfiguration(args);
+            Configuration = CreateConfiguration(args);
             var services = new ServiceCollection();
 
-            ConfigureOptions(services, config);
+            ConfigureOptions(services);
             ConfigureServices(services);
             
             var provider = services.BuildServiceProvider();
@@ -25,19 +26,26 @@ namespace TFConsole
         private static IConfigurationRoot CreateConfiguration(in string[] args)
         {
             return new ConfigurationBuilder()
+                .AddJsonFile("appsettings.json")
                 .AddCommandLine(args, null)
                 .Build();
         }
 
-        private static void ConfigureOptions(IServiceCollection services, IConfiguration config)
+        private static void ConfigureOptions(IServiceCollection services)
         {
-            // services.Configure<MyOptions>(config);
-            // services.Configure<MyOptions>(config.GetSection("MySection"));
+            // services.Configure<MyOptions>(Configuration);
+            // services.Configure<MyOptions>(Configuration.GetSection("MySection"));
         }
 
         static void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<ISimpleLogger, ConsoleLogger>();
+            services.AddLogging(options =>
+            {
+                options
+                    .AddConfiguration(Configuration.GetSection("Logging"))
+                    .AddConsole();
+            });
+
             services.AddTransient<TFConsoleApp>();
         }
     }

@@ -1,21 +1,20 @@
-﻿using Microsoft.Extensions.Options;
+﻿using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
-using TFConsole.Abstractions;
 
 namespace TFConsole
 {
     class TFConsoleApp
     {
-        readonly ISimpleLogger Logger;
+        readonly ILogger<TFConsoleApp> Logger;
 
-        public TFConsoleApp(ISimpleLogger logger)
+        public TFConsoleApp(ILogger<TFConsoleApp> logger)
         {
             Logger = logger;
         }
 
         public Task RunAsync()
         {
-            Logger.Log("Hello World!");
+            Logger.LogInformation("Hello World!");
 
             return Task.CompletedTask;
         }
