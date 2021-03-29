@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using Microsoft.Extensions.Options;
+using System.Threading.Tasks;
 using TFConsole.Abstractions;
 
 namespace TFConsole
@@ -12,7 +13,7 @@ namespace TFConsole
             Logger = logger;
         }
 
-        public Task RunAsync(string[] args)
+        public Task RunAsync()
         {
             Logger.Log("Hello World!");
 
