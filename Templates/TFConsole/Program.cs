@@ -33,8 +33,9 @@ namespace TFConsole
 
         private static void ConfigureOptions(IServiceCollection services)
         {
-            // services.Configure<MyOptions>(Configuration);
-            // services.Configure<MyOptions>(Configuration.GetSection("MySection"));
+            //services.AddOptions<MyOptions>()
+            //    .Bind(Configuration.GetSection("MySection"))
+            //    .ValidateDataAnnotations();
         }
 
         static void ConfigureServices(IServiceCollection services)
