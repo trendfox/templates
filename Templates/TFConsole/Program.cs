@@ -17,7 +17,7 @@ namespace TFConsole
             ConfigureOptions(services);
             ConfigureServices(services);
             
-            var provider = services.BuildServiceProvider();
+            using var provider = services.BuildServiceProvider();
             var app = provider.GetRequiredService<TFConsoleApp>();
             
             await app.RunAsync();
