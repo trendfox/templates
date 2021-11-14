@@ -20,4 +20,4 @@ dotnet new <name>
 
 - `tfconsole`
   
-  Console application with dependency injection.
+  Console application with dependency injection and configuration.
