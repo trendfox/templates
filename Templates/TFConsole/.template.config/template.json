@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Martin Kaip",
+    "classifications": [
+        "Common",
+        "Console"
+    ],
+	"tags": {
+		"language": "C#",
+		"type": "project"
+	},
+    "identity": "TrendFox.Templates.Console",
+    "name": "TrendFox Console Application",
+    "description": "Console application template with dependency injection.",
+    "shortName": "tfconsole",
+    "sourceName": "TFConsole",
+	"preferNameDirectory" : true
+}
