@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageType>Template</PackageType>
-    <PackageVersion>2.0.0</PackageVersion>
+    <PackageVersion>2.1.0</PackageVersion>
     <PackageId>TrendFox.Templates</PackageId>
     <Title>Trend-Fox Templates</Title>
     <Authors>Martin Kaip</Authors>
