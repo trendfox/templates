@@ -11,7 +11,7 @@
 	},
     "identity": "TrendFox.Templates.Wpf",
     "name": "TrendFox WPF Application",
-    "description": "WPF application template with dependency injection.",
+    "description": "WPF application template with Prism, configuration and logging.",
     "shortName": "tfwpf",
     "sourceName": "TFWpf",
 	"preferNameDirectory" : true
